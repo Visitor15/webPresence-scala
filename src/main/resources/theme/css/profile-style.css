@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #1F1F1F;
+}
+
+body {
+    font: 14px/18px Arial, "Verdana", Times, serif;
+    color: #F3EDE1;
+}
+
+h1 {
+    font-size: 41px;
+    line-height: 50px;
+    font-weight: normal;
+    font-style: normal;
+    color: #F3EDE1;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+    font-style: normal;
+    color: #F3EDE1;
+}
+
+h3 {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: normal;
+    font-style: normal;
+    color: #F3EDE1;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a:link, a:visited {
+    color: #FFB25C;
+    text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+    text-decoration: underline;
+    color: #FFB25C;
+}
+
+div.page
+{
+    page-break-after: always;
+    page-break-inside: avoid;
+}
+
+#header {
+    height: 50px;
+    line-height: 38px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#header ul {
+    width: 950px;
+    margin: 0 auto;
+    padding: 7px 0 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#header ul li {
+    display: inline;
+    margin-right: 10px;
+    float: left;
+}
+
+#header ul li a {
+    line-height: 24px;
+    font-size: 12px;
+    font-style: italic;
+    float: left;
+    color: #686868;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+}
+
+#header ul li a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+#header ul li a span {
+    display: block;
+    height: 26px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#about {
+    width: 950px;
+    padding: 80px 0 39px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#about h1 {
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+#about h2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+#story {
+    font-size: 18px;
+    line-height: 30px;
+    width: 440px;
+    float: left;
+    padding-right: 65px;
+}
+
+#picture {
+    width: 190px;
+    float: left;
+}
+
+#contact {
+    width: 320px;
+    float: right;
+    padding-right: 0px;
+    padding-top: 20px;
+    list-style-type: none;
+    line-height: 20px;
+    font-size: 20px;
+    color: #F3EDE1;
+}
+
+#contact li {
+    width: 320px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#contact li span {
+    float: left;
+}
+
+#contact li strong, contact li strong a {
+    float: right;
+    text-align: right;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+
+#contact span.contact-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    font-style: normal;
+    color: #F3EDE1;
+}
+
+.section {
+    width: 950px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+    float: none;
+}
+
+.section h2 {
+    width: 160px;
+    padding-right: 30px;
+    float: left;
+    padding-top: 0;
+    line-height: 20px;
+}
+
+.section h3 {
+    line-height: 20px;
+    margin-bottom: 24px;
+    font-style: bold;
+}
+
+.section h4 {
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.section .date {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.section .item {
+    width: 750px;
+    padding-left: 50px;
+    float: right;
+    padding-top: 0;
+    margin-bottom: 33px;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.section .description {
+    width: 610px;
+    margin-top: -8px;
+}
+
+.description ul {
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.description .third_column {
+    position: relative;
+    width: 220px;
+    float: left;
+}
+
+.section .skills {
+    width: 660px;
+}
+
+hr {
+    width: 800px;
+    border-top: none;
+    border-bottom: 1px solid #3c3c3c;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* @end */
+
+/* @group small */
+
+body.small {
+}
+
+body.small #header ul  {
+    width: 750px;
+}
+
+body.small #about {
+    width: 750px;
+    position: relative;
+    padding-bottom: 65px;
+    min-height: 260px;
+}
+
+body.small #about #story {
+    float: none;
+}
+
+body.small #about #contact {
+    float: none;
+    padding-top: 0;
+    padding-right: 0;
+    clear: left;
+}
+
+body.small #about #picture {
+    clear: none;
+    float: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+/* --- */
+
+body.small .section {
+    width: 750px;
+}
+
+body.small .section .item {
+    width: 510px;
+}
+
+
+
+/* @end */
+
+/* @group footer */
+
+#footer {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    background: url(https://odesk-prod-portraits.s3.amazonaws.com/Users:visitor15:PortraitUrl_original?AWSAccessKeyId=1XVAX3FNQZAFC9GJCFR2&Expires=2147483647&Signature=MM0hxrFSmnx0GlMCsmLd74XRclg%3D&143622351319010414) no-repeat;
+    background-size: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}

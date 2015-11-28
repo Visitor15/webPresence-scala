@@ -1,6 +1,6 @@
 package com.forged.server
 
-import spray.http.MediaTypes._
+import spray.httpx.PlayTwirlSupport._
 import spray.routing.HttpServiceActor
 
 /**
@@ -11,15 +11,14 @@ class ServerActor extends HttpServiceActor {
   override def receive: Receive = runRoute {
     path("") {
       get {
-        respondWithMediaType(`text/html`) { // XML is marshalled to `text/xml` by default, so we simply override here
-          complete {
-            <html>
-              <body>
-                <h1>Hello, world!</h1>
-              </body>
-            </html>
-          }
+        complete {
+          html.profile.render()
         }
+      }
+    } ~
+    pathPrefix("theme") {
+      get {
+        getFromResourceDirectory("theme")
       }
     }
   }
