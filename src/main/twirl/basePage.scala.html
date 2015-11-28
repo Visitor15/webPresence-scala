@@ -1,0 +1,14 @@
+@(title: String)(header: Html)(footer: Html)(content: Html)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" type="text/css" href="theme/css/base-style.css">
+    </head>
+    <body>
+        <header class="header">@header</header>
+        <section class="content">@content</section>
+        <footer class="footer">@footer</footer>
+    </body>
+</html>

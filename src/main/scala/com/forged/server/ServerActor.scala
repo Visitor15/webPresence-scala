@@ -12,7 +12,14 @@ class ServerActor extends HttpServiceActor {
     path("") {
       get {
         complete {
-          html.profile.render()
+          html.basePage.render("Home", html.header.render(), html.footer.render(), html.profile.render())
+        }
+      }
+    } ~
+    path("index") {
+      get {
+        complete {
+          html.index.render()
         }
       }
     } ~

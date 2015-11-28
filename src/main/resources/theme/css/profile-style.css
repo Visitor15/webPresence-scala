@@ -4,12 +4,12 @@
 }
 
 html, body {
-    background: #1F1F1F;
+    background: #EEEEEE;
 }
 
 body {
     font: 14px/18px Arial, "Verdana", Times, serif;
-    color: #F3EDE1;
+    color: #1F1F1F;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
     line-height: 50px;
     font-weight: normal;
     font-style: normal;
-    color: #F3EDE1;
+    color: #1F1F1F;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
     line-height: 30px;
     font-weight: normal;
     font-style: normal;
-    color: #F3EDE1;
+    color: #1F1F1F;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h3 {
     line-height: 30px;
     font-weight: normal;
     font-style: normal;
-    color: #F3EDE1;
+    color: #1F1F1F;
 }
 
 p {
@@ -59,7 +59,6 @@ div.page
 #header {
     height: 50px;
     line-height: 38px;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -171,11 +170,11 @@ div.page
     line-height: 30px;
     font-weight: normal;
     font-style: normal;
-    color: #F3EDE1;
+    color: #1F1F1F;
 }
 
 .section {
-    width: 950px;
+    width: 50%;
     margin: 0 auto;
     padding: 20px 0;
     overflow: hidden;
@@ -187,6 +186,7 @@ div.page
     padding-right: 30px;
     float: left;
     padding-top: 0;
+    padding-bottom: 25px;
     line-height: 20px;
 }
 
@@ -210,7 +210,7 @@ div.page
 }
 
 .section .item {
-    width: 750px;
+    width: 100%;
     padding-left: 50px;
     float: right;
     padding-top: 0;
