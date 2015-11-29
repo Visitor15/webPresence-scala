@@ -1,0 +1,76 @@
+@import url("column-style.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #E0E0E0;
+    font: 14px/18px Arial, "Verdana", Times, serif;
+    color: #1F1F1F;
+}
+
+.center-column {
+    margin: 2% 20%;
+}
+
+.inline-column {
+    display: inline-block;
+}
+
+.inline-column:after {
+    clear: inline-block;
+}
+
+.intro-container {
+    line-height: 30px;
+}
+
+.large-font p {
+    font-size: 24px;
+}
+
+#profile-summary {
+    width: 50%;
+}
+
+#profile-summary h1 {
+    font-size: 28px;
+    font-style: normal;
+}
+
+#profile-summary h2 {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#contact {
+    float: right;
+    list-style-type: none;
+    color: #F3EDE1;
+}
+
+#contact li {
+    overflow: hidden;
+}
+
+#contact li strong, contact li strong a {
+    float: right;
+    text-align: right;
+}
+
+#profile-contact {
+    float: right;
+}
+
+#contact span.contact-title {
+    color: #1F1F1F;
+}
+
+@media only screen and (max-width: 600px) {
+    .center-column {
+        margin: 2% 10%;
+    }
+}
