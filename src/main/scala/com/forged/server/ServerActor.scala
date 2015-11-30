@@ -9,24 +9,17 @@ import spray.routing.HttpServiceActor
 class ServerActor extends HttpServiceActor {
 
   override def receive: Receive = runRoute {
-    path("") {
+    path("home") {
       get {
         complete {
-          html.basePage.render("Home", html.header.render(), html.footer.render(), html.profile.render())
+          html.home.render()
         }
       }
     } ~
-    path("index") {
+    path("old-profile") {
       get {
         complete {
-          html.index.render()
-        }
-      }
-    } ~
-    path("profile") {
-      get {
-        complete {
-          html.basePage.render("Nick Champagne", html.header.render(), html.footer.render(), html.responsiveProfile.render())
+          html.basePage.render("Nick Champagne", html.header.render(), html.footer.render(), html.profile.render())
         }
       }
     } ~
