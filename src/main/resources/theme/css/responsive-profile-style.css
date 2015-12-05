@@ -12,18 +12,6 @@ html, body {
     color: #1F1F1F;
 }
 
-.center-column {
-    margin: 2% 20%;
-}
-
-.inline-column {
-    display: inline-block;
-}
-
-.inline-column:after {
-    clear: inline-block;
-}
-
 .intro-container {
     line-height: 30px;
 }
@@ -67,10 +55,4 @@ html, body {
 
 #contact span.contact-title {
     color: #1F1F1F;
-}
-
-@media only screen and (max-width: 600px) {
-    .center-column {
-        margin: 2% 10% 10% 10%;
-    }
 }

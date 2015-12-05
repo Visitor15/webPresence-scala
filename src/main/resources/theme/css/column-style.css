@@ -20,3 +20,21 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+.center-column {
+    margin: 2% 20%;
+}
+
+.inline-column {
+    display: inline-block;
+}
+
+.inline-column:after {
+    clear: inline-block;
+}
+
+@media only screen and (max-width: 1680px) {
+    .center-column {
+        margin: 2% 10% 10% 10%;
+    }
+}

@@ -1,0 +1,23 @@
+@import url("column-style.css");
+
+#nuesoft-main-image-container {
+    width: 100%;
+    height: 306px;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    #nuesoft-main-image-container {
+        width: 100%;
+        height: 255px;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #nuesoft-main-image-container {
+        width: 100%;
+        height: 255px;
+        background-size: cover;
+    }
+}

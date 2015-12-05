@@ -23,6 +23,13 @@ class ServerActor extends HttpServiceActor {
         }
       }
     } ~
+    path("portfolio") {
+      get {
+        complete {
+          html.basePage.render("Nick Champagne", html.header.render(), html.footer.render(), html.portfolio.render())
+        }
+      }
+    } ~
     pathPrefix("theme") {
       get {
         getFromResourceDirectory("theme")

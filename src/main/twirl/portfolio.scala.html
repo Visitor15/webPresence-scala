@@ -1,7 +1,100 @@
 @()
 
-<div class="col-12">
-    <h1>The Portfolio</h1>
-    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
-    <p>Resize the browser window to see how the content respond to the resizing.</p>
-</div>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="theme/css/portfolio-style.css">
+    </head>
+    <body>
+
+        <div class="center-column intro-container">
+            <div>
+                <div id="profile-summary" class="inline-column">
+                    <h1>Nick Champagne</h1>
+                    <h2>Software Engineer</h2>
+                </div>
+                <div id="profile-contact" class="inline-column">
+                    <ul id="contact">
+                        <li><strong><a href="mailto:nickc.dev@@gmail.com">nickc.dev@@gmail.com</a></strong></li>
+                        <li><strong><a href="https://github.com/Visitor15?tab=repositories">github</a></strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="portfolio-summary" class="intro-container">
+                <h1>The Portfolio</h1>
+                <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+                <p>Resize the browser window to see how the content respond to the resizing.</p>
+            </div>
+
+            <div id="portfolio-container">
+                <h1>Android</h1>
+
+                <hr id="android-line-break" width="40%" />
+
+                <div class="project-heading">
+                    <h1>Nuesoft Medical</h1>
+                </div>
+
+                <div class="col-12 portfolio-row">
+                    <CENTER>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("nuesoft-medical-login.png") }
+                        </div>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("nuesoft-medical-profile-docs.png") }
+                        </div>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("nuesoft-medical-profile-encryption.png") }
+                        </div>
+                    </CENTER>
+                </div>
+
+                <center>
+                    <hr class="android-project-line-break" width="40%" />
+                </center>
+
+                <div class="project-heading">
+                    <h1>Money Informer</h1>
+                </div>
+
+                <div class="col-12 portfolio-row">
+                    <CENTER>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("money-informer-phone-port-main.png") }
+                        </div>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("money-informer-phone-port-history.png") }
+                        </div>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("money-informer-tablet-links.png") }
+                        </div>
+                    </CENTER>
+                </div>
+
+                <center>
+                    <hr class="android-project-line-break" width="40%" />
+                </center>
+
+                <div class="project-heading">
+                    <h1>ASTRO File manager</h1>
+                </div>
+
+                <div class="col-12 portfolio-row">
+                    <CENTER>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("astro-phone-listview.png") }
+                        </div>
+                        <div class="portfolio-item">
+                            @html.card { @html.nuesoftMedicalCard.render("astro-phone-nav-drawer.png") }
+                        </div>
+                    </CENTER>
+                </div>
+
+                <center>
+                    <hr class="android-project-line-break" width="40%" />
+                </center>
+
+            </div>
+        </div>
+    </body>
+</html>
