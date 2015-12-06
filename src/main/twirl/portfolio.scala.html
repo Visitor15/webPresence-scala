@@ -1,4 +1,6 @@
-@()
+@import com.forged.data.PortfolioProject
+
+@(projects: List[PortfolioProject])
 
 <link rel="stylesheet" type="text/css" href="theme/css/portfolio-style.css">
 <div class="center-column intro-container">
@@ -24,108 +26,15 @@
 
         <hr id="android-line-break" width="50%" />
 
-        <div class="project-summary-container">
-            <div class="project-heading">
-                <h1>Curious - Khan Academy</h1>
-            </div>
+        @for((portfolioProject, index) <- projects.zipWithIndex) {
+            @html.projectTemplate(portfolioProject)
 
-            <div class="project-description">
-                <p>A native Android application that integrates with Khan Academy's public api.</p>
-            </div>
-        </div>
-
-        <div class="col-12 portfolio-row">
-            <CENTER>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("android-curious-khanacademy-green.png") }
-                </div>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("android-curious-khanacademy-blue.png") }
-                </div>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("android-curious-topics-menu.png") }
-                </div>
-            </CENTER>
-        </div>
-
-        <center>
-            <hr class="android-project-line-break" width="50%" />
-        </center>
-
-        <div class="project-summary-container">
-            <div class="project-heading">
-                <h1>Nuesoft Medical</h1>
-            </div>
-
-            <div class="project-description">
-                <p>A medical application designed for increasing a patient's control over their data while providing a secure way of transferring data electronically.</p>
-            </div>
-        </div>
-
-        <div class="col-12 portfolio-row">
-            <CENTER>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("nuesoft-medical-login.png") }
-                </div>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("nuesoft-medical-profile-docs.png") }
-                </div>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("nuesoft-medical-profile-encryption.png") }
-                </div>
-            </CENTER>
-        </div>
-
-        <center>
-            <hr class="android-project-line-break" width="50%" />
-        </center>
-
-        <div class="project-summary-container">
-            <div class="project-heading">
-                <h1>Money Informer</h1>
-            </div>
-
-            <div class="project-description">
-                <p>A tool to convert and look up world currency and country information. View financial history charts for different exchange rates and quickly find more information through Wikipedia and Google search.</p>
-            </div>
-        </div>
-
-        <div class="col-12 portfolio-row">
-            <CENTER>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("money-informer-phone-port-main.png") }
-                </div>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("money-informer-phone-port-history.png") }
-                </div>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("money-informer-tablet-links.png") }
-                </div>
-            </CENTER>
-        </div>
-
-        <center>
-            <hr class="android-project-line-break" width="50%" />
-        </center>
-
-        <div class="project-summary-container">
-            <div class="project-heading">
-                <h1>ASTRO File manager</h1>
-            </div>
-
-            <div class="project-description">
-                <p>ASTRO File Manager finds and manages all of your files, no matter where they are located.</p>
-            </div>
-        </div>
-        <div class="col-12 portfolio-row">
-            <CENTER>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("astro-phone-listview.png") }
-                </div>
-                <div class="portfolio-item">
-                    @html.card { @html.nuesoftMedicalCard.render("astro-phone-nav-drawer.png") }
-                </div>
-            </CENTER>
-        </div>
+        <!-- We just don't want to print the line break after the last item -->
+            @if(index != (projects.length - 1)) {
+                <center>
+                    <hr class="android-project-line-break" width="50%" />
+                </center>
+            }
+        }
     </div>
 </div>

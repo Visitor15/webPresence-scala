@@ -1,3 +1,5 @@
+@import com.forged.server.Server
+
 @()
 
-@basePage("Home") {  @html.header.render() } { @html.footer.render() } { @html.portfolio.render() }
+@basePage("Home") {  @html.header.render() } { @html.footer.render() } { @html.portfolio(Server.generateProjectList()) }

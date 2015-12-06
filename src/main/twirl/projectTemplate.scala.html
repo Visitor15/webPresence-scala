@@ -1,0 +1,25 @@
+@import com.forged.data.PortfolioProject
+
+@(project: PortfolioProject)
+
+<link rel="stylesheet" type="text/css" href="theme/css/portfolio-style.css">
+
+<div class="project-summary-container">
+    <div class="project-heading">
+        <h1>@project.title</h1>
+    </div>
+
+    <div class="project-description">
+        <p>@project.description</p>
+    </div>
+</div>
+
+<div class="col-12 portfolio-row">
+    <CENTER>
+        @for(image <- project.images) {
+            <div class="portfolio-item">
+                @html.card { @html.nuesoftMedicalCard.render(image) }
+            </div>
+        }
+    </CENTER>
+</div>
