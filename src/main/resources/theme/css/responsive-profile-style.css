@@ -56,3 +56,21 @@ html, body {
 #contact span.contact-title {
     color: #1F1F1F;
 }
+
+@media only screen and (max-width: 600px) {
+    #profile-summary h1 {
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    #profile-summary h2 {
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    #contact li strong, contact li strong a {
+        float: right;
+        text-align: right;
+        font-size: 10px;
+    }
+}
