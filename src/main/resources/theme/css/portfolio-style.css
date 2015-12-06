@@ -14,8 +14,7 @@
 }
 
 .project-heading h1 {
-    margin-left: 2%;
-    margin-bottom: 2%;
+
 }
 
 #portfolio-summary {
@@ -25,7 +24,7 @@
 
 #android-line-break {
     margin-top: 4px;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 .portfolio-item {
@@ -42,6 +41,16 @@
 .android-project-line-break {
     margin-top: 4%;
     margin-bottom: 4%;
+}
+
+.project-summary-container {
+    margin-left: 2%;
+    maring-right: 2%;
+    margin-bottom: 2%;
+}
+
+.project-description p {
+    line-height: normal;
 }
 
 @media only screen and (max-width: 768px) {
