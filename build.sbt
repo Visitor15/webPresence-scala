@@ -15,6 +15,7 @@ libraryDependencies ++= {
   Seq(
     "io.spray"            %%  "spray-can"           % sprayV,
     "io.spray"            %%  "spray-routing"       % sprayV,
+    "io.spray"            %%  "spray-servlet"       % sprayV,
     "io.spray"            %%  "spray-json"          % sprayJsonV,
     "io.spray"            %%  "spray-testkit"       % sprayV  % "test",
     "com.typesafe.akka"   %%  "akka-actor"          % akkaV,
@@ -26,5 +27,8 @@ libraryDependencies ++= {
 lazy val root = (project in file(".")).enablePlugins(SbtTwirl)
 
 TwirlKeys.templateImports += "java.util.UUID"
+
+// Tomcat dependencies
+tomcat()
 
 Revolver.settings
